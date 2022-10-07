@@ -35,6 +35,7 @@ outputField.appendChild(resultBoxDom)
 // console.log(typeof inputField.value);
 
 submitInputButton.addEventListener("click", conversionCalculator)
+// document.querySelector("form").addEventListener("submit", conversionCalculator)
 
 function conversionCalculator() {
     // let kilograms = parseInt(kilos)
@@ -42,6 +43,8 @@ function conversionCalculator() {
     let poundConvertion = kilos * 2.2046
     let gramConvertion = kilos * 0.0010000
     let ounceConvertion = kilos * 35.274
+
+    
 
     resultBoxPounds.innerText = poundConvertion + ' svarai'
     resultBoxGrams.innerText = gramConvertion + ' gramai'
