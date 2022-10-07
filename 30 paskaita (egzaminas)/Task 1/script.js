@@ -10,6 +10,7 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 ------------------------------------------------------------------- */
 let inputField = document.getElementById("search")
 let submitInputButton = document.getElementById("submit-btn")
+let outputField = document.getElementById("output")
 
 let kilos = inputField.value
 let poundConvertion = kilos * 2.2046
@@ -18,4 +19,20 @@ let ounceConvertion = kilos * 35.274
 
 console.log(inputField);
 console.log(submitInputButton);
+
+let resultBoxDom = document.createElement("div")
+resultBoxDom.className = "resboxdom"
+let resultBoxPounds = document.createElement("div")
+resultBoxPounds.className = "resboxpound"
+let resultBoxGrams = document.createElement("div")
+resultBoxGrams.className = "resboxgram"
+let resultBoxOunces = document.createElement("div")
+resultBoxOunces.className = "resboxOunce"
+
+resultBoxDom.appendChild(resultBoxGrams, resultBoxOunces, resultBoxPounds)
+outputField.appendChild(resultBoxDom)
+
+console.log(typeof inputField.value);
+
+
 

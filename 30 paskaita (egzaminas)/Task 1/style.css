@@ -63,3 +63,12 @@ form {
     font-size: 2em;
   }
 }
+
+/* // =-=-=-=-=-==--===-// */
+
+.resboxdom {
+  width: 80%;
+  min-height: 200px;
+  margin: 50px auto;
+  background-color: aliceblue;
+}
