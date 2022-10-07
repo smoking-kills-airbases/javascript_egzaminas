@@ -27,22 +27,28 @@ resultBoxGrams.className = "resboxgram"
 let resultBoxOunces = document.createElement("div")
 resultBoxOunces.className = "resboxOunce"
 
-resultBoxDom.appendChild(resultBoxGrams, resultBoxOunces, resultBoxPounds)
+resultBoxDom.appendChild(resultBoxGrams,)
+resultBoxDom.appendChild(resultBoxOunces)
+resultBoxDom.appendChild(resultBoxPounds)
 outputField.appendChild(resultBoxDom)
 
 // console.log(typeof inputField.value);
 
+submitInputButton.addEventListener("click", conversionCalculator)
+
 function conversionCalculator() {
-    let kilograms = parseInt(kilos)
+    // let kilograms = parseInt(kilos)
 
     let poundConvertion = kilos * 2.2046
     let gramConvertion = kilos * 0.0010000
     let ounceConvertion = kilos * 35.274
 
-    resultBoxPounds.i
+    resultBoxPounds.innerText = poundConvertion + ' svarai'
+    resultBoxGrams.innerText = gramConvertion + ' gramai'
+    resultBoxOunces.innerText = ounceConvertion + ' uncijos'
     // console.log(poundConvertion)
 }
 
-conversionCalculator()
 
+conversionCalculator()
 

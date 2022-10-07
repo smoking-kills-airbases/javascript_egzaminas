@@ -68,7 +68,7 @@ form {
 
 .resboxdom {
   width: 80%;
-  min-height: 200px;
+  height: auto;
   margin: 50px auto;
   background-color: aliceblue;
   border:#b9b5b5 solid 5px;
@@ -77,7 +77,7 @@ form {
 }
 
 .resboxpound {
-  border-bottom: #b9b5b5 solid 5px;
+
   font-size: 1.1em;
   min-height: 10%;
 }
