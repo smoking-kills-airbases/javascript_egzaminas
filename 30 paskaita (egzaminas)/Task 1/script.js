@@ -13,12 +13,10 @@ let submitInputButton = document.getElementById("submit-btn")
 let outputField = document.getElementById("output")
 
 let kilos = inputField.value
-let poundConvertion = kilos * 2.2046
-let gramConvertion = kilos * 0.0010000
-let ounceConvertion = kilos * 35.274
 
-console.log(inputField);
-console.log(submitInputButton);
+
+// console.log(inputField);
+// console.log(submitInputButton);
 
 let resultBoxDom = document.createElement("div")
 resultBoxDom.className = "resboxdom"
@@ -32,7 +30,19 @@ resultBoxOunces.className = "resboxOunce"
 resultBoxDom.appendChild(resultBoxGrams, resultBoxOunces, resultBoxPounds)
 outputField.appendChild(resultBoxDom)
 
-console.log(typeof inputField.value);
+// console.log(typeof inputField.value);
 
+function conversionCalculator() {
+    let kilograms = parseInt(kilos)
+
+    let poundConvertion = kilos * 2.2046
+    let gramConvertion = kilos * 0.0010000
+    let ounceConvertion = kilos * 35.274
+
+    resultBoxPounds.i
+    // console.log(poundConvertion)
+}
+
+conversionCalculator()
 
 
