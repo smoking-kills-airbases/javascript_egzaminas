@@ -6,7 +6,7 @@ pusėje esančiame "state" skaičiavimo bloke (<div id="btn__state">0</div>)
 
 let clickeroo = document.getElementById("btn__element")
 let counteroo = document.getElementById("btn__state")
-let clickCount = counteroo.innerText
+// let clickCount = counteroo.innerText
 
 // console.log(counteroo.innerText);
 
