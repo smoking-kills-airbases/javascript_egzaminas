@@ -15,6 +15,8 @@ const ENDPOINT = 'https://api.github.com/users';
 let userShowBtn = document.getElementById("btn")
 let userField = document.getElementById("message")
 
+let putCardHere = document.getElementById("output")
+
 // console.log(ENDPOINT)
 
 // for (let i=0; i<ENDPOINT.length; i++){
@@ -31,8 +33,20 @@ fetch(ENDPOINT)
         for (let i=0; i<data.length; i++){
 
             console.log(data[i])
+
+            let userBox = document.createElement("div")
+            let userLogin = document.createElement("p")
+
+            userLogin.innerText = data[i].login
+
+            userBox.appendChild(userLogin)
+            putCardHere.appendChild(userBox)
+            
+            let userAvatar = document.createElement('img');
+            userAvatar.src = data[i].avatar_url;
+            userBox.appendChild(userAvatar);
            
-            }
+        }
 
     })
 
