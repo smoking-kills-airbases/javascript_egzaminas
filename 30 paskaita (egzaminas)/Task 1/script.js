@@ -32,26 +32,34 @@ resultBoxDom.appendChild(resultBoxOunces)
 resultBoxDom.appendChild(resultBoxPounds)
 outputField.appendChild(resultBoxDom)
 
+
+let poundConvertion = kilos * 2.2046
+let gramConvertion = kilos * 0.0010000
+let ounceConvertion = kilos * 35.274
+
 // console.log(typeof inputField.value);
 
-submitInputButton.addEventListener("click", conversionCalculator)
+submitInputButton.addEventListener("click", conversionCalculator())
 // document.querySelector("form").addEventListener("submit", conversionCalculator)
 
 function conversionCalculator() {
     // let kilograms = parseInt(kilos)
-
-    let poundConvertion = kilos * 2.2046
-    let gramConvertion = kilos * 0.0010000
-    let ounceConvertion = kilos * 35.274
-
-    
-
     resultBoxPounds.innerText = poundConvertion + ' svarai'
     resultBoxGrams.innerText = gramConvertion + ' gramai'
     resultBoxOunces.innerText = ounceConvertion + ' uncijos'
+   
     // console.log(poundConvertion)
 }
 
 
 conversionCalculator()
+
+
+// veikia bet reloadina page iskart paspaudus
+
+// submitInputButton.addEventListener("click", (event) => { 
+//     resultBoxPounds.innerText = poundConvertion + ' svarai'
+//     resultBoxGrams.innerText = gramConvertion + ' gramai'
+//     resultBoxOunces.innerText = ounceConvertion + ' uncijos'}
+//     )
 

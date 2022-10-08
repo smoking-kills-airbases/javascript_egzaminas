@@ -12,6 +12,9 @@ Pastaba: Informacija apie user'į (jo kortelė) bei turi turėti bent minimalų 
 
 const ENDPOINT = 'https://api.github.com/users';
 
+let userShowBtn = document.getElementById("btn")
+let userField = document.getElementById("message")
+
 // console.log(ENDPOINT)
 
 // for (let i=0; i<ENDPOINT.length; i++){
@@ -28,7 +31,12 @@ fetch(ENDPOINT)
         for (let i=0; i<data.length; i++){
 
             console.log(data[i])
-            
+           
             }
 
     })
+
+
+ userShowBtn.addEventListener("click", (event) => {userField.style.display = "none"})
+        
+
