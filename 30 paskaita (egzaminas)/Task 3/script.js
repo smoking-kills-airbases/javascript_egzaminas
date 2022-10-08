@@ -11,3 +11,24 @@ Pastaba: Informacija apie user'į (jo kortelė) bei turi turėti bent minimalų 
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'https://api.github.com/users';
+
+// console.log(ENDPOINT)
+
+// for (let i=0; i<ENDPOINT.length; i++){
+//     console.log(ENDPOINT[i])
+// }
+
+fetch(ENDPOINT)
+    .then(res => res.json())
+    .then(
+        data => {
+
+        // console.log(data)
+
+        for (let i=0; i<data.length; i++){
+
+            console.log(data[i])
+            
+            }
+
+    })
