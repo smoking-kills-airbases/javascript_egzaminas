@@ -19,3 +19,15 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+
+function filterNames() {
+  let filterNames = users.filter(function (user) {
+      return user.name
+  
+  });
+
+  console.log(filterNames);
+}
+
+filterNames();
