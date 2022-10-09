@@ -30,4 +30,19 @@ function filterNames() {
   console.log(filterNames);
 }
 
-filterNames();
+// filterNames();
+
+for (let i=0; i<users.length; i++) {
+  console.log(users[i].name)
+
+  let box = []
+  box.push(users[i].name)
+
+  box.splice(, 0, users[i].name)
+
+  console.log(box)
+
+  
+}
+
+
