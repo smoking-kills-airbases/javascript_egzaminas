@@ -59,3 +59,23 @@
   border-radius: 5px;
   background-color: #fff;
 }
+
+
+/* jhhjhjhjhjhjhjjhjhhjhjhjhjhjhjjh */
+
+.userbox {
+  background-color: cadetblue;
+  margin: 10px;
+  border: rgb(92, 70, 101) solid 5px;
+  max-width: 50%;
+}
+
+.userlogin {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.useravatar {
+  max-width: 60%;
+  margin: 20%;
+}

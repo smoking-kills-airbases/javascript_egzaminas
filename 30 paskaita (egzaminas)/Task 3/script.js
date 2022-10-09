@@ -32,10 +32,13 @@ fetch(ENDPOINT)
 
         for (let i=0; i<data.length; i++){
 
-            console.log(data[i])
+            // console.log(data[i])
 
             let userBox = document.createElement("div")
+            userBox.className = "userbox"
             let userLogin = document.createElement("p")
+            userLogin.className = "userlogin"
+
 
             userLogin.innerText = data[i].login
 
@@ -44,6 +47,7 @@ fetch(ENDPOINT)
             
             let userAvatar = document.createElement('img');
             userAvatar.src = data[i].avatar_url;
+            userAvatar.className = "useravatar"
             userBox.appendChild(userAvatar);
            
         }
