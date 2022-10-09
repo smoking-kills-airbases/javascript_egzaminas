@@ -38,11 +38,12 @@ for (let i=0; i<users.length; i++) {
   let box = []
   box.push(users[i].name)
 
-  box.splice(, 0, users[i].name)
+  box.splice(8, 0, users[i].name)
 
   console.log(box)
 
   
 }
+
 
 

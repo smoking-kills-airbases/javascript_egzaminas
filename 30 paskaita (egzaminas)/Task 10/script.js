@@ -2,6 +2,26 @@
 Sutvarkykite užduoties "Task 10" esančius failus taip, kad veiktų žemiau pateiktos funcijos
 -------------------------------------------------------------------------------------------- */
 
+let numeriai = "\modules\numbers\numbers.js"
+
+
+
+
+
+
+
+
+console.log(numeriai);
+
+
+
+
+
+
+
+
+
+
 let a = composition(one, four);
 let b = division(four, two);
 let c = substraction(three, two);
