@@ -20,15 +20,18 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
 
-for (let i=0; i<users.length; i++) {
-  // console.log(users[i]);
-  let user = users[i]
-  // let ages = users[i].age
-      
-  filterDogOwners(user);
-      
-     
+filterDogOwnersPrime();
 
+function filterDogOwnersPrime() {
+  for (let i = 0; i < users.length; i++) {
+    // console.log(users[i]);
+    let user = users[i];
+    // let ages = users[i].age
+    filterDogOwners(user);
+
+
+
+  }
 }
 
 function filterAdults() {
