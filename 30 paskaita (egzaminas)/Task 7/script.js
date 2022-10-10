@@ -12,13 +12,13 @@ const audi = {
 };
 
 
-let data = audi
+// let data = audi
 
 
-function showObjectKeys(data) {
+function showObjectKeys(audi) {
  
 
-  console.log(Object.keys(data));
+  console.log(Object.keys(audi));
 }
 
-showObjectKeys(data)
+showObjectKeys(audi)
