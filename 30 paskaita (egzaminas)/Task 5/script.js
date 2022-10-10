@@ -20,33 +20,35 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
 
-filterDogOwnersPrime();
 
-function filterDogOwnersPrime() {
-  for (let i = 0; i < users.length; i++) {
+
+function filterDogOwnersPrime(data) {
+  for (let i = 0; i < data.length; i++) {
     // console.log(users[i]);
-    let user = users[i];
+    let user = data[i];
     // let ages = users[i].age
-    filterDogOwners(user);
 
-
+    if (user.hasDog) {
+      console.log('dog owner: ' + user.name);
+    }
 
   }
 }
+filterDogOwnersPrime(users);
 
-function filterAdults() {
-  let filterAdults = users.filter(function (user) {
-      return user.age >= 18;
+
+
+
+function filterAdults(data) {
+  let filterAdults = data.filter(function (data) {
+      return data.age >= 18;
   
   });
 
   console.log(filterAdults);
 }
 
-filterAdults();
+filterAdults(users);
 
-function filterDogOwners(user) {
-  if (user.hasDog) {
-      console.log(user.name);
-  }
-}
+
+
